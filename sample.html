@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broken Layout Challenge</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 800px;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            border: 2px solid #333;
+        }
+
+        /* The intended layout: Sidebar and Content side-by-side */
+        .sidebar {
+            float: left;
+            width: 200px;
+            padding: 20px;
+            background-color: #ffcccc;
+        }
+
+        .content {
+            float: left;
+            width: 560px;
+            padding: 20px;
+            background-color: #ccffcc;
+        }
+
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Left side navigation or widgets go here.</p>
+        </div>
+        
+        <div class="content">
+            <h1>Main Content</h1>
+            <p>This section is supposed to sit perfectly to the right of the sidebar.</p>
+        </div>
+
+        <div class="footer">
+            <p>Footer Content</p>
+        </div>
+    </div>
+
+</body>
+</html>
